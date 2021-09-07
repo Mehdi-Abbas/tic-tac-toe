@@ -1,0 +1,90 @@
+.main{
+    /* position: absolute; */
+    left: 25%;
+    max-width: 50%;
+    border: 1px black solid;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 600px;
+    /* overflow: scroll; */
+    border: none;
+    /* min-width: 500px; */
+    
+}
+@media screen and (max-width: 800px) {
+    .main{
+        left: 0%;
+        max-width:100%;
+    }
+    
+}
+
+.main .tictac .header {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 85%);
+    /* height: 100px; */
+    font-size: 6vw;
+    color: white;
+    font-style: italic;
+    padding: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main .tictac .board{
+    display: table;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.main .tictac .table , td {
+    /* border: 1px solid black; */
+    width: 80px;
+    height: 80px;
+    border-width: 2px;
+    font-size: 60px;
+    font-family: "Arial Rounded MT";
+}
+/* .main .tictac .table, td:active {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+} */
+
+.main .tictac .table, td:active {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: bisque;
+}
+
+.vert {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.hori {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.main .tictac button{
+    padding: 5px;
+    font-size: 18px;
+    border-color: white;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #147c94;
+    margin-left: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+    
+    
+  }
+.main .tictac button:hover{
+    margin-top: -3px;
+}
+.main .tictac button:active{
+    background-color: #19a7c7;
+}
